@@ -1,0 +1,6 @@
+- source: project
+  netlify:
+    - id: dda6ac08-7376-4fb8-b7d3-14352c9f58c8
+      url: 'https://poetic-banoffee-ac286d.netlify.app'
+    - id: 9338ebf8-64de-4e6a-af2c-b3c92dc9af39
+      url: 'https://monumental-paletas-13467c.netlify.app'

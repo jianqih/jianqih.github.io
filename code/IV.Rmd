@@ -1,0 +1,103 @@
+---
+title: "iv"
+author: "Jianqi Huang"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+```{r}
+data("mroz", package="PoEdata")
+library(broom)
+library(knitr)
+mroz1 <- mroz[mroz$lfp==1,] #restricts sample to lfp=1
+educ.ols <- lm(educ~exper+I(exper^2)+mothereduc, data=mroz1)
+kable(tidy(educ.ols), digits=4, align='c',caption="First stage in the 2SLS model for the 'wage' equation")
+```
+
+
+The p-value of this mothereduc is very low, indicating a strong correlation between this instrument and the endogenous variable educ even after controlling for other variables.
+
+
+
+```{r}
+educHat <- fitted(educ.ols)
+wage.2sls <- lm(log(wage)~educHat+exper+I(exper^2), data=mroz1)
+kable(tidy(wage.2sls), digits=4, align='c',caption=
+  "Second stage in the 2SLS model for the 'wage' equation")
+```
+
+
+
+
+```{r,results='asis'}
+library(AER)
+library(stargazer)
+data("mroz", package="PoEdata")
+mroz1 <- mroz[mroz$lfp==1,] #restricts sample to lfp=1.
+mroz1.ols <- lm(log(wage)~educ+exper+I(exper^2), data=mroz1)
+mroz1.iv <- ivreg(log(wage)~educ+exper+I(exper^2)|
+            exper+I(exper^2)+mothereduc, data=mroz1)
+mroz1.iv1 <- ivreg(log(wage)~educ+exper+I(exper^2)|
+            exper+I(exper^2)+mothereduc+fathereduc,
+            data=mroz1)
+stargazer(mroz1.ols, wage.2sls, mroz1.iv, mroz1.iv1,
+  title="Wage equation: OLS, 2SLS, and IV models compared",
+  header=FALSE, 
+  type="html", # "html" or "latex" (in index.Rmd) 
+  keep.stat="n",  # what statistics to print
+  omit.table.layout="n",
+  star.cutoffs=NA,
+  digits=4, 
+#  single.row=TRUE,
+  intercept.bottom=FALSE, #moves the intercept coef to top
+  column.labels=c("OLS","explicit 2SLS", "IV mothereduc", 
+                  "IV mothereduc and fathereduc"),
+  dep.var.labels.include = FALSE,
+  model.numbers = FALSE,
+  dep.var.caption="Dependent variable: wage",
+  model.names=FALSE,
+  star.char=NULL) #supresses the stars)
+```
+
+
+
+\begin{equation}
+educ=\gamma_{1}+\gamma_{2}exper+\gamma_{3} exper^2+\theta_{1} mothereduc+ \theta_{2}fathereduc+\nu
+\label{eq:educlm10}
+\end{equation}
+
+
+
+```{r}
+educ.ols <- lm(educ~exper+I(exper^2)+mothereduc+fathereduc, 
+               data=mroz1)
+tab <- tidy(educ.ols)
+kable(tab, digits=4,
+      caption="The 'educ' first-stage equation")
+```
+
+
+
+```{r}
+linearHypothesis(educ.ols, c("mothereduc=0", "fathereduc=0"))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

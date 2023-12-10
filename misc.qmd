@@ -1,0 +1,44 @@
+---
+title: "Miscellaneous"
+---
+
+
+## Tutorials
+
+-   [Gauss Distribution: From Specially to Generally(in Chinese)](tutorials/guass22-10-27.pdf)
+-   [Using TikZ to Draw a Picture in Latex](tutorials/tikz_10-27.pdf)
+-   [Mean-Variance Model(in Chinese)](tutorials/2022-11-10-mean-var.pdf)
+-   [Multiple-Regression: Based on a Income Forecast(in Chinese)](tutorials/mutil-reg-income-11-07.pdf)
+-   [Writing with Quarto(in Chinese)](tutorials/quarto-0324.pdf)
+-   [LaTeX Environment](tutorials/latex-env.pdf)
+-   [The Basics of LaTeX](tutorials/latex-basics0228.pdf)
+-   [Classification(in Chinese)](tutorials/classify_22-11-16.pdf)
+-   [Financial Economics(in Chinese)](tutorials/finecon_may23.pdf)
+
+## Model Derivatives
+
+- [Brunnermeier & Sannikov(2014)](tutorials/BS2014_model_derivative2.pdf)
+
+## Notes
+
+-   [Machine Learning(in Chinese)](notes/ml-12-19.pdf) : It covers topics such as linear models, clustering, SVM, gradient descent, decision trees, and more. 
+
+-   [Stochastic Calculus(in Chinese)](notes/sc-12-19.pdf): It's a note introducing the basic concept in Stochastic Calculus such as Martingale, conditional expectation.
+-   [Statistics and Probability(in Chinese)](notes/probablity-statstics-0217.pdf): covers core concepts in Statistics and Probability, with rich case studies in economics and finance to help learners understand economic and financial realities more accurately. 
+-   [Bayesian Statistics(in Chinese)](notes/Bayes0304.pdf): It's about Bayesian statistics and using the prior distribution to calculate the posterior distribution.
+
+
+
+## [Program Chunk](https://program-chunk.netlify.app/)
+
+- Program code and projects are uploaded to a blog container, typically using Python, R, and Julia. I also upload them to Github.
+
+## Public Goods
+
+### [CUFE Beamer Template](https://www.overleaf.com/latex/templates/cufe-beamer-theme/pcwbrgmntnky)
+
+-  This is a Beamer theme that incorporates certain elements of CUFE.
+
+### [About Econ](https://about-econ.jianqihuang.com)
+
+- There are two modules: one for collecting information about postgraduate economics applications, and another for collecting online economic resources. It is also helpful for undergraduates who are applying for Econ Master/Predoc or PhD.

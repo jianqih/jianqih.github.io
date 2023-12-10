@@ -1,0 +1,20 @@
+---
+title: ""
+image: jq-mar-20.jpeg
+about: 
+  template: trestles
+  image-shape: rectangle
+  image-width: 15em
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/JianqiHuan67561
+    - icon: github
+      text: GitHub
+      href: https://github.com/jianqih
+    - icon: envelope
+      text: Email
+      href: mailto:jianqihuang@email.cufe.edu.cn
+---
+
+🧙‍♀️ Hello! My name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. I am passionate about utilizing Deep Learning and Reinforcement Learning to address the macroeconomic and financial models. I am also interested in structural econometrics and empirical asset pricing.

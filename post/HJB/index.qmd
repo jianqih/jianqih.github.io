@@ -1,0 +1,124 @@
+---
+title: "Continuous-time Optimization"
+date: 2023-12-10
+author: Jianqi Huang
+categories: 
+    - Macro
+    - Math
+format:
+  html:
+    code-fold: true
+image: images/pham.jpg
+---
+
+# How to derive the HJB equation
+
+
+
+Sometimes I need to remember how to derive the HJB and Kaplan equations when I try to employ these equations to solve models. So I will give a record for deriving the HJBE from discrete to continuous version.
+
+First, we consider there is an optimal value function
+$$
+J(t_0,x_0)=\max_{u}\int_{t_0}^T f(t,x,u)dt+\phi(x(T),T)
+\\ s.t. \quad  dx = g(t,x,u)dt
+$$
+we can try to write it down in a recursive format:
+$$
+\begin{aligned}
+J(t_0,x_0) &= \max_{u}\int_{t_0}^T f(t,x,u)dt+\phi(x(T),T)\\
+&= \max_{u}\left(\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds+\int_{t_0+\Delta t}^T f(s,x,u)ds+\phi(x(T),T)\right)\\
+& = \max_{u}\left(\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds+\max_u\left(\int_{t_0+\Delta t}^T f(s,x,u)ds+\phi(x(T),T)\right)\right)\\
+&= \max_{u}\left(\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds+J(t+\Delta t,x+\Delta x)\right)
+\end{aligned}
+$$
+Intuitively, if we have a plan for the optimal consumption for the finite lifetime horizon, we can divide the optimality path into two parts: first is from $t_0$ to $t_0+\Delta t$ (maybe in a few days) and the second part is $t_0+\Delta t$ to $T$ (i.e. the time when you die). Next, we need to recall the variables of first-order Taylor expansion.
+$$
+J(t+\Delta t,x+\Delta x)= J(t,x)+J_t \Delta t+J_x g\Delta t.
+$$
+Note we need to consider the second-order expansion when the constraint follows the Brownian motion.
+
+We also could consider the terms of $\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds$ transfer into 
+$$
+\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds=f(\tilde{t},x(\tilde{t}),u(\tilde{t}))\Delta t
+$$
+Thus we have 
+$$
+J(t_0,x_0)=\max_u \left(f(\tilde{t},x(\tilde{t}),u(\tilde{t}))\Delta t+J(t_0,x_0)+J_t \Delta t+J_x g\Delta t.\right)
+$$
+
+$$
+0 = \max_u \left(f(\tilde{t},x(\tilde{t}),u(\tilde{t}))\Delta t+J_t \Delta t+J_xg \Delta t\right)
+$$
+
+where $\Delta t\to 0$
+
+
+
+### Infinite horizon
+
+$$
+\beta V(x)=\max_u \left(h(x,u)+V'(x)g\right)
+$$
+
+
+
+## stochastic optimization
+
+The stochastic version of the optimal problem is 
+$$
+J(t_0,x_0) =\max \mathbb{E}_{t_0}\int_{t_0}^T f(t,x,u)\mathrm{d}t+\phi(x(T),T)\\
+s.t. \quad dx = g(t,x,u)\mathrm{d}x +\sigma(t,x,u)\mathrm{d}Z.
+$$
+From equation (2) we can derive the value function recursively,
+$$
+\begin{aligned}
+J(t,x)&= \max_{u}\left(\int_{t_0}^{t_0+\Delta t} f(s,x,u)ds+J(t+\Delta t,x+\Delta x)\right)\\
+&= \max_u \mathbb{E}_t\left(f(\tilde{t},x(\tilde{t}),u(\tilde t))\Delta t+J(t,x)+J_t\Delta t+J_x\Delta x+\frac12 J_{xx}(\Delta x)^2\right)\\
+&= \max_u \mathbb{E}_t\left(f(\tilde{t},x(\tilde{t}),u(\tilde t))\Delta t+J(t,x)+J_t\Delta t+J_x g\Delta t+J_x\sigma \Delta z+\frac12 J_{xx}\sigma^2\Delta t\right)
+\end{aligned}
+$$
+Dropping out $J(t,x)$ both sides, we have
+$$
+0=\max_u \mathbb{E}_t\left(f(\tilde{t},x(\tilde{t}),u(\tilde t))\Delta t+J_t\Delta t+J_x g\Delta t+J_x\sigma \Delta z+\frac12 J_{xx}\sigma^2\Delta t\right)
+$$
+Using the first-order condition, we can solve optimal $u^*$ as a function of $J_x$ and $J_{xx}$. Then plugging the expression of optimal $u^*$ into the HJB equation, we can obtain a partial differential equation of $J(t,x)$,
+$$
+-J_t=f(t,x,u^*)+J_x g(t,x,u^*)+\frac12J_{xx}(\sigma(t,x,u^*))^2.
+$$
+The partial differential equation plus its boundary condition, 
+$$
+J(T,x(T))=\phi(x(T),T),
+$$
+should have a solution of $J(t,x)$.
+
+### Infinite horizon
+
+the infinite horizon problem with $f(t,x,u)=e^{-\beta t}h(x,u)$, we assume $J(t,x)=e^{-\beta t}V(x)$. 
+
+Similarly,
+$$
+J(t,x)=\max_u \left(e^{-\beta t}h(x,u)\Delta t+\right)
+$$
+
+
+The HJB equation becomes 
+$$
+0=\max_u \left(e^{-\beta t}h(x,u)-\beta e^{-\beta t}V(x)+e^{-\beta t}V'(x)g+\frac12 e^{-\beta t}V''(x)\sigma^2\right).
+$$
+rearrange we can obtain:
+$$
+\beta V= \max_u f+V'g+\frac12V'' \sigma^2
+$$
+
+- As John Cochrane said whether time is “really” continuous or discrete is an issue we’ll leave to physicists and philosophers. 
+
+
+
+
+
+
+
+# References
+
+- Shenghao Zhu(UIBE) gives a very detailed derive for continuous-time dynamic programming <https://shenghaozhu.weebly.com/uploads/2/3/0/5/23050810/dynamicoptimization-2016.pdf>
+- Ben Moll's Lecture note <https://benjaminmoll.com/wp-content/uploads/2019/07/Lecture4_ECO521_web.pdf>

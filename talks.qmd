@@ -1,0 +1,15 @@
+---
+title: "talks & workshops"
+resource-path: 
+  - slides
+subtitle: "a selection of my talks & workshops and associated materials" 
+page-layout: full
+title-block-banner: false
+---
+
+-   [Bagging Algorithm Principle and Implmentation](slides/bagging/bagging10-22.html), Oct, 2022
+-   [Certainty Factor Model](slides/CF-model_hjq_11-18.pdf), Dec, 2022
+-   [The Punishment in Experimental Economics](slides/Punishment-EE-22-11/EE.html), Nov,2022
+-   [Introduction to Social Science](slides/why-social-sci-23-02/why-social-sci.html) Feb, 2023
+-   [Paper presentation: Social networks and mental health outcomes](slides/deve-pre/deve-pre.html) Apr, 2023
+-   [Adversarial and Attention in Multi-task Learning](slides/ad_att_MTL.pdf) Aug, 2023

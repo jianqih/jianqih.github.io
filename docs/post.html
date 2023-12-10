@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.124">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jianqi - posts</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./fav.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta property="og:title" content="Jianqi - posts">
+<meta property="og:site-name" content="Jianqi">
+<meta name="twitter:title" content="Jianqi - posts">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Jianqi</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./cv/CV.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./codes.html" rel="" target="">
+ <span class="menu-text">Code</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./talks.html" rel="" target="">
+ <span class="menu-text">Talks &amp; Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./post.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Post</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./misc.html" rel="" target="">
+ <span class="menu-text">Misc</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">posts</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="China">China <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Science">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Econ">Econ <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Macro">Macro <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Math">Math <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Metrics">Metrics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Reading">Reading <span class="quarto-category-count">(1)</span></div></div></div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">posts</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Macro,Math" data-listing-date-sort="1702137600000" data-listing-file-modified-sort="1702209436824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.96">
+<div class="thumbnail">
+<p><a href="./post/HJB/index.html"> <img src="./post/HJB/images/pham.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/HJB/index.html">
+<h3 class="no-anchor listing-title">
+Continuous-time Optimization
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Macro'); return false;">
+Macro
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Math'); return false;">
+Math
+</div>
+</div>
+<a href="./post/HJB/index.html">
+<div class="listing-description">
+Sometimes I need to remember…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/HJB/index.html">
+<div class="listing-date">
+Dec 10, 2023
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Econ,Metrics" data-listing-date-sort="1678377600000" data-listing-file-modified-sort="1702211363337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.895">
+<div class="thumbnail">
+<p><a href="./post/Master_metrics_chp2/index.html"> <img src="./post/Master_metrics_chp2/images/p2.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/Master_metrics_chp2/index.html">
+<h3 class="no-anchor listing-title">
+Read Mastering Metrics(Chapter 2)
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Econ'); return false;">
+Econ
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Metrics'); return false;">
+Metrics
+</div>
+</div>
+<a href="./post/Master_metrics_chp2/index.html">
+<div class="listing-description">
+The question of whether college…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/Master_metrics_chp2/index.html">
+<div class="listing-date">
+Mar 10, 2023
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Metrics,Econ,Reading" data-listing-date-sort="1676217600000" data-listing-file-modified-sort="1702211257234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.975">
+<div class="thumbnail">
+<p><a href="./post/Master_metrics_chp1/index.html"> <img src="./post/Master_metrics_chp1/images/husbands.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/Master_metrics_chp1/index.html">
+<h3 class="no-anchor listing-title">
+Reading Mastering Metrics(Chapter 1)
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Metrics'); return false;">
+Metrics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Econ'); return false;">
+Econ
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reading'); return false;">
+Reading
+</div>
+</div>
+<a href="./post/Master_metrics_chp1/index.html">
+<div class="listing-description">
+We want to solve a causal questions.<em>random assignment</em>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/Master_metrics_chp1/index.html">
+<div class="listing-date">
+Feb 13, 2023
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1676131200000" data-listing-file-modified-sort="1694488207911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="0.735">
+<div class="thumbnail">
+<p><a href="./post/2023-02-12-quarto build a book.html"> <img src="./post/figure/netlify-control-panel.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/2023-02-12-quarto build a book.html">
+<h3 class="no-anchor listing-title">
+How to use quarto build a book
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+usually we use rmarkdown to create a book project. It could build in RStudio and publish in netlify. But it’s little tedious…<code></code><code></code>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2023-02-12-quarto build a book.html">
+<div class="listing-date">
+Feb 12, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1668787200000" data-listing-file-modified-sort="1668846485250" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2.1">
+<div class="thumbnail">
+<a href="./post/2022-11-19-SOE and FDI Strategies.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/2022-11-19-SOE and FDI Strategies.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/2022-11-19-SOE and FDI Strategies.html">
+<h3 class="no-anchor listing-title">
+SOE and FDI Strategies
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+A atricle published in Global Strategy Journal called <strong>revisiting FDI strategies and the flow of firm-specific advantage</strong> in 2016. It revisited the motivations of SOEs and demonstrate that such organizations are more likely to undertake FDI in foreign countries with goal of acquiring unique…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-11-19-SOE and FDI Strategies.html">
+<div class="listing-date">
+Nov 19, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1668700800000" data-listing-file-modified-sort="1679407217631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.73">
+<div class="thumbnail">
+<a href="./post/2022-11-18-SFA.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/2022-11-18-SFA.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/2022-11-18-SFA.html">
+<h3 class="no-anchor listing-title">
+SFA model
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+SFA, Stochastic Frontier approach, using the stoachastic to stimate the efficient
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-11-18-SFA.html">
+<div class="listing-date">
+Nov 18, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1667836800000" data-listing-file-modified-sort="1667840729930" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.07">
+<div class="thumbnail">
+<a href="./post/2022-11-08-How-to-use-snippets-in-Rmd.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/2022-11-08-How-to-use-snippets-in-Rmd.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/2022-11-08-How-to-use-snippets-in-Rmd.html">
+<h3 class="no-anchor listing-title">
+How to use snippets in Rmd
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+There is a function about complete the mathematic code when typing the imcomplete code in many complier. In RStudio the <code>.R</code> file also has this function. But in the RMarkdown typed in the text it is lack in. So we need to complete the…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-11-08-How-to-use-snippets-in-Rmd.html">
+<div class="listing-date">
+Nov 8, 2022
+</div>
+<div class="listing-author">
+Jianqi
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1666972800000" data-listing-file-modified-sort="1702207937933" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="0.81">
+<div class="thumbnail">
+<a href="./post/2022-10-29-Using-Conda-manage-package-from-some-language.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/2022-10-29-Using-Conda-manage-package-from-some-language.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/2022-10-29-Using-Conda-manage-package-from-some-language.html">
+<h3 class="no-anchor listing-title">
+Using Conda manage package from some language
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+conda and environment based on different environments
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-10-29-Using-Conda-manage-package-from-some-language.html">
+<div class="listing-date">
+Oct 29, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Data Science" data-listing-date-sort="1666972800000" data-listing-file-modified-sort="1702210999973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.165">
+<div class="thumbnail">
+<a href="./post/quarto_book/index.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/quarto_book/index.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/quarto_book/index.html">
+<h3 class="no-anchor listing-title">
+How to use Quarto invert Jupyter to other format
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Data Science'); return false;">
+Data Science
+</div>
+</div>
+<a href="./post/quarto_book/index.html">
+<div class="listing-description">
+Quarto is a good system to convert the
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/quarto_book/index.html">
+<div class="listing-date">
+Oct 29, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1666281600000" data-listing-file-modified-sort="1666946958798" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="0.62">
+<div class="thumbnail">
+<p><a href="./post/2022-10-21-jupyter-format.html"> <img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/hello_6_0.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/2022-10-21-jupyter-format.html">
+<h3 class="no-anchor listing-title">
+Using Jupyter translated into other format
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+based on <code>#｜</code> in the normal compile and the necessity of translating into other…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-10-21-jupyter-format.html">
+<div class="listing-date">
+Oct 21, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1666195200000" data-listing-file-modified-sort="1679966697597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="0.7">
+<div class="thumbnail">
+<a href="./post/N-M-function/2022-10-20-NM-function.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/N-M-function/2022-10-20-NM-function.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/N-M-function/2022-10-20-NM-function.html">
+<h3 class="no-anchor listing-title">
+Measure The Utility Function Based On The N-M Method
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+本报告通过 N-M 心理实验法来确定某个被试者的效用函数曲线，同时根据实验的改进来发 现在利益最大化的纯动机之下，来确定某个人的效用函数曲线的形状以及效用函数的特征。 进一步在对比发现个体效用的一些结论。<br>
+<strong>关键词</strong>： 标准测定法，期望效用
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/N-M-function/2022-10-20-NM-function.html">
+<div class="listing-date">
+Oct 20, 2022
+</div>
+<div class="listing-author">
+jianqiHuang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1666108800000" data-listing-file-modified-sort="1688656775040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12.86">
+<div class="thumbnail">
+<a href="./post/2022-10-19-ml-mul_reg.html">
+<div class="thumbnail-image">
+
+</div>
+</a><p><a href="./post/2022-10-19-ml-mul_reg.html"></a></p>
+</div>
+<div class="body">
+<a href="./post/2022-10-19-ml-mul_reg.html">
+<h3 class="no-anchor listing-title">
+基于三种不同方法的多元回归
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+对于一个多元回归，与一元回归类似，其函数表达为 <span class="math display">\[
+Y_i=\beta_0+\beta_1X_1+\beta_2X_2\cdots+\beta_nX_n+\mu_i
+\]</span> 写成矩阵的形式： <span class="math display">\[
+f(x_i)=\omega^Tx_i+b
+\]</span>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/2022-10-19-ml-mul_reg.html">
+<div class="listing-date">
+Oct 19, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="Econ,China" data-listing-date-sort="1657468800000" data-listing-file-modified-sort="1702210522679" data-listing-date-modified-sort="1702210522000" data-listing-reading-time-sort="2.035">
+<div class="thumbnail">
+<p><a href="./post/Young-telent/index.html"> <img src="./post/Young-telent/images/reg2.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./post/Young-telent/index.html">
+<h3 class="no-anchor listing-title">
+Arrival of Young Talent
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Econ'); return false;">
+Econ
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('China'); return false;">
+China
+</div>
+</div>
+<a href="./post/Young-telent/index.html">
+<div class="listing-description">
+<p>What is the potential outcome from the culture revolution in 1970s, especially the effect of send-down movement to local people.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./post/Young-telent/index.html">
+<div class="listing-date">
+Jul 11, 2022
+</div>
+<div class="listing-author">
+Jianqi Huang
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2023, Jianqi Huang</div>   
+  </div>
+</footer>
+
+
+
+</body></html>

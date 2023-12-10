@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  site-url: https://www.jianqihuang.com
+  title: "Jianqi"
+  twitter-card: true
+  open-graph: true
+  sidebar: 
+    collapse-level: 1
+  favicon: fav.png
+  navbar:
+    pinned: true
+    left:
+      - href: cv/CV.pdf
+        text: CV
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: codes.qmd
+        text: Code
+      - href: talks.qmd
+        text: Talks & Workshops
+      - href: post.qmd
+        text: Post
+      - href: misc.qmd
+        text: Misc
+  page-footer: 
+    background: light
+    left: "Copyright 2023, Jianqi Huang"
+
+format:
+  html:
+    theme: 
+      light: [united, styles.scss]
+      dark: [united, styles-dark.scss]
+    toc: true
+    highlight-style: monokai
+    page-layout: full
+
+editor: visual

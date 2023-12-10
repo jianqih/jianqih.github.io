@@ -1,0 +1,17 @@
+---
+title: "Statistics, Machine learning and Data mining"
+date: 2022-12-10
+author: Jianqi Huang
+categories: 
+    - Machine Learning
+    - Statistics
+    - Data Mining
+format:
+  html:
+    code-fold: true
+image: images/stat-ml-dm-r.png
+---
+
+- Website: <http://stats-dm-ml-r.jianqihuang.com>
+
+- This book based on daily learning about Data Mining, Machine Learning and Statistics. Not just for theory but the practice based on mainly R language.

@@ -1,0 +1,44 @@
+/*-- scss:defaults --*/
+
+$theme-beige: #fafafa;
+$theme-green: #5CB4C2;
+$theme-forest: #345136;
+$theme-red: #AF4E37;
+$theme-orange: #E68232;
+$theme-yellow: #F4BA02;
+
+$body-bg: #050505;
+$body-color: #c4c2be;
+$link-color: lighten($theme-forest, 30%);
+$navbar-bg: #000000;
+
+/*-- scss:rules --*/
+
+.icon h1 {
+    text-align: center;
+    color: $theme-yellow;
+}
+
+.center h5 {
+    text-align: center;
+}
+
+.red {
+    color: $theme-orange;
+    font-weight: bold;
+}
+
+.orange {
+    color: $theme-orange;
+    font-weight: bold;
+}
+
+.yellow {
+    color: $theme-yellow;
+    font-weight: bold;
+}
+
+.forest {
+    color: $theme-green;
+    font-weight: bold;
+}

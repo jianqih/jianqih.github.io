@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 7cc967ad-3ebf-4cc6-a67f-72714c6a0c5f
+      url: 'https://jianqihuang.com'

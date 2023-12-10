@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.124">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="jianqiHuang">
+<meta name="dcterms.date" content="2022-10-20">
+
+<title>Jianqi - Measure The Utility Function Based On The N-M Method</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../fav.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta property="og:title" content="Jianqi - Measure The Utility Function Based On The N-M Method">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="Jianqi">
+<meta name="twitter:title" content="Jianqi - Measure The Utility Function Based On The N-M Method">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Jianqi</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/CV.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../codes.html" rel="" target="">
+ <span class="menu-text">Code</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks.html" rel="" target="">
+ <span class="menu-text">Talks &amp; Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post.html" rel="" target="">
+ <span class="menu-text">Post</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../misc.html" rel="" target="">
+ <span class="menu-text">Misc</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Measure The Utility Function Based On The N-M Method</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title d-none d-lg-block">Measure The Utility Function Based On The N-M Method</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>jianqiHuang </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 20, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#摘要" id="toc-摘要" class="nav-link active" data-scroll-target="#摘要">摘要</a></li>
+  <li><a href="#引言" id="toc-引言" class="nav-link" data-scroll-target="#引言">引言</a></li>
+  <li><a href="#理论介绍" id="toc-理论介绍" class="nav-link" data-scroll-target="#理论介绍">理论介绍</a></li>
+  <li><a href="#实验过程" id="toc-实验过程" class="nav-link" data-scroll-target="#实验过程">实验过程</a>
+  <ul class="collapse">
+  <li><a href="#实验目的" id="toc-实验目的" class="nav-link" data-scroll-target="#实验目的">实验目的</a></li>
+  <li><a href="#实验设计" id="toc-实验设计" class="nav-link" data-scroll-target="#实验设计">实验设计</a></li>
+  <li><a href="#实验引导语" id="toc-实验引导语" class="nav-link" data-scroll-target="#实验引导语">实验引导语</a></li>
+  <li><a href="#具体实施" id="toc-具体实施" class="nav-link" data-scroll-target="#具体实施">具体实施</a></li>
+  <li><a href="#实验改进" id="toc-实验改进" class="nav-link" data-scroll-target="#实验改进">实验改进</a></li>
+  </ul></li>
+  <li><a href="#实验总结" id="toc-实验总结" class="nav-link" data-scroll-target="#实验总结">实验总结</a></li>
+  <li><a href="#附录" id="toc-附录" class="nav-link" data-scroll-target="#附录">附录</a>
+  <ul class="collapse">
+  <li><a href="#第一次实验过程" id="toc-第一次实验过程" class="nav-link" data-scroll-target="#第一次实验过程">第一次实验过程</a></li>
+  <li><a href="#第二次实验过程" id="toc-第二次实验过程" class="nav-link" data-scroll-target="#第二次实验过程">第二次实验过程</a></li>
+  </ul></li>
+  <li><a href="#参考文献" id="toc-参考文献" class="nav-link" data-scroll-target="#参考文献">参考文献</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+<section id="摘要" class="level2">
+<h2 class="anchored" data-anchor-id="摘要">摘要</h2>
+<p>本报告通过 N-M 心理实验法来确定某个被试者的效用函数曲线，同时根据实验的改进来发 现在利益最大化的纯动机之下，来确定某个人的效用函数曲线的形状以及效用函数的特征。 进一步在对比发现个体效用的一些结论。<br>
+<strong>关键词</strong>： 标准测定法，期望效用</p>
+</section>
+<section id="引言" class="level2">
+<h2 class="anchored" data-anchor-id="引言">引言</h2>
+<p>期望效用理论是上世纪50年代Von Neumann和Morgenstern 在公理化假设的基础上，运用逻辑和数学工具，建立了在不确定下对理性人进行选择的框架。<span class="citation" data-cites="morgenstern1953theory"><sup>[<a href="#ref-morgenstern1953theory" role="doc-biblioref">1</a>]</sup></span> 在此基础之上，众多经济学家将其得到更多的发展。其中就包括Arrow和Debreu提出的不确定性决策的分析范式。构建了微观经济学的理论框架。<span class="citation" data-cites="friesen1979arrow"><sup>[<a href="#ref-friesen1979arrow" role="doc-biblioref">2</a>]</sup></span></p>
+</section>
+<section id="理论介绍" class="level2">
+<h2 class="anchored" data-anchor-id="理论介绍">理论介绍</h2>
+<p>期望效用函数理论通过多次实验的方式，将某个随机变量X以概率<span class="math inline">\(P_i\)</span>取值<span class="math inline">\(x_i,i=1,2,\cdots,n\)</span>，某人确定的得到<span class="math inline">\(x_i\)</span>时候的效用为<span class="math inline">\(u(x_i)\)</span>，因此该随机变量的效用： <span class="math display">\[
+U(X)=E[u(X)]=P_1u(x_1)+P_2u(x_2)+\cdots+P_nu(x_n)
+\]</span></p>
+</section>
+<section id="实验过程" class="level2">
+<h2 class="anchored" data-anchor-id="实验过程">实验过程</h2>
+<section id="实验目的" class="level3">
+<h3 class="anchored" data-anchor-id="实验目的">实验目的</h3>
+<p>因此，我们通过学习冯诺伊曼和摩根斯坦的实验，我们同样进行标准测定法来测定一个大学生的效用函数。通过对话提问的基本方式来实现。试图去测定一个人的风险效用函数，通过实验问题的方式来实现。</p>
+</section>
+<section id="实验设计" class="level3">
+<h3 class="anchored" data-anchor-id="实验设计">实验设计</h3>
+<p>与某一名同学展开对话，引导其参与我们的决策实验，通过我们的实验引导语之下，来对其进行相应的引导和对答。之后在实验的引导语之下，我们根据受试者的回答来判断其具体的效用数值，在一轮对话中，我们需要了解在理论假设下，在一定数量范围内的期望决策函数的形状如何等。</p>
+</section>
+<section id="实验引导语" class="level3">
+<h3 class="anchored" data-anchor-id="实验引导语">实验引导语</h3>
+<p>你目前有一项最大可能获利20万元，最大可能亏损10万元的决策游戏，你只需要通过我所给的方案进行选择，然后再进行通过你最终选择的方案给予一定的金钱奖励。然后我会通过不同的方案决策，让你进行选择，首先第一个是你有50%的机会获利20万元，而50%的概率不回亏损10万元。第二个方案是你有100%的机会获利10元。若我将第二个方案中的100%机会获利10元改为5元。你的方案会发生怎么样的变化。这样的过程不断进行下去，最后可能使得受试者达到妥协。说明这两个方案对于他来说是相同的。因此这个效用是等同的。</p>
+</section>
+<section id="具体实施" class="level3">
+<h3 class="anchored" data-anchor-id="具体实施">具体实施</h3>
+<p>通过微信线上实验的方式，我们将实验的过程在附录中显示，可以看到在我们的引导下，受试者可以对不同的方案进行比较，最终得到了一个他的效用函数曲线。</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>数量</th>
+<th>-10</th>
+<th>1</th>
+<th>4.5</th>
+<th>15.5</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>效用</td>
+<td>0</td>
+<td>0.25</td>
+<td>0.5</td>
+<td>0.75</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>我们通过R语言的拟合函数来进行效用曲线的绘制，可以得到一下的结果：</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/test11.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">第一次实验效用函数图</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>我们可以通过分析他的效用曲线图形可以发现：他在第一次回答时候，其效用是接近于风险中性者也就是根据所得到的数量的中间值惊喜排序。而在之后的两次的回答中，其均呈现出的是一个风险偏好的状态，也就是在同等的数量期望情况下，所能带来的效用会低于风险中性者。</p>
+</section>
+<section id="实验改进" class="level3">
+<h3 class="anchored" data-anchor-id="实验改进">实验改进</h3>
+<p>通过一定的文献检索，<span class="citation" data-cites="kahneman2013prospect"><sup>[<a href="#ref-kahneman2013prospect" role="doc-biblioref">3</a>]</sup></span><span class="citation" data-cites="luce1958probabilistic"><sup>[<a href="#ref-luce1958probabilistic" role="doc-biblioref">4</a>]</sup></span> 我们发现，人们对于损失所产生的负效用比同等金额的收益产生的正效用绝对量更大。同时，针对对上述例子中，对于所给的实验的真实发生的可能性较弱，受试者并没有全部的动机在获取个人利益最大化上。因此我们希望通过真实的货币激励来反映实验对象真实的风险效用函数。</p>
+<p>实验者通过一定的物质激励（见附录）以及将原始的金额与激励直接挂钩（随机选取某一次一个给定期望的奖励方式）来完成实验。实验过程将以附录中显示。我们对实验过程进行改进之后，呈现的过程如下所示：</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>数量</th>
+<th>0</th>
+<th>7.5</th>
+<th>13.5</th>
+<th>17.5</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>效用</td>
+<td>0</td>
+<td>0.25</td>
+<td>0.5</td>
+<td>0.75</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/test22.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">第二次实验效用函数图</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>同样可以绘制出效用函数曲线，我们可以看出这次的受试者的风险估计较为一致，他是一个显著的风险偏好者。同时在随着金额的增加，会存在一个“保底”的心态，比如在测度0.75效用水平下，收益上限较高和保底收益较高的水平下，其会更加倾向于选择不确定性高的数量组合。</p>
+</section>
+</section>
+<section id="实验总结" class="level2">
+<h2 class="anchored" data-anchor-id="实验总结">实验总结</h2>
+<p>我们针对这两次的实验，我们发现：人们对于不同的实验环境，所可能造成的风险偏好可能会发生改变。同时实验的过程中对于损失的厌恶性以及对于实验结果的可能造成的影响，都是倾向于获得收益而不是接受亏损。</p>
+<p>进一步的实验中，受试者对于个人的风险接受性在不同数量组合水平下会呈现一定的差异，在数量组合水平增加下，受试者越能够承担风险。对此的理论解释还不足。</p>
+</section>
+<section id="附录" class="level2">
+<h2 class="anchored" data-anchor-id="附录">附录</h2>
+<section id="第一次实验过程" class="level3">
+<h3 class="anchored" data-anchor-id="第一次实验过程">第一次实验过程</h3>
+<p>实验人：你目前面临着一项最大可能获利20万元，或者最大损失10万元的决策项目。第一方案：以50%的机会获利20万元，50%的机会损失10万元；第二方案：以100%的机会获利5万元，你会选择哪一个方案？<br>
+受试者：第二个吧。<br>
+实验人：若将第二方案中的100%机会获得5元改成2万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得2万元再改成 3万元，你要改变你的选择吗？<br>
+受试者：不会，还是会选择第一个方案。<br>
+实验人：若将第二方案中的100%机会获得3万元再改成 4万元，你要改变你的选择吗？<br>
+受试者：不要，但可能再加一点就会了。<br>
+实验人：若将第二方案中的100%机会获得3万元再改成 4.5万元，你要改变你的选择吗？<br>
+受试者：要，选择第二个方案。<br>
+实验人：好的。对于在将第一个方案变为最大可能获利4.5万元，最大可能损失10万元，都还是同等的可能性。第二个方案是100%损失-2.75万元，你会选择哪一个方案。<br>
+受试者：我会选择第一个方案。<br>
+实验人：若将第二方案中的100%机会获得-2.75万元再改成 -2万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得-2.75万元再改成 -1万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得-2.75万元再改成 0万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得-2.75万元再改成 1万元，你要改变你的选择吗？<br>
+受试者：会的。<br>
+实验人：好的。对于在将第一个方案再变为最大可能获利20万元，最小可能获利4.5万元，都还是同等的可能性。第二个方案是100%获利12.25万元，你会选择哪一个方案。<br>
+受试者：我会选择第一个方案。<br>
+实验人：若将第二方案中的100%机会获得12.25万元改成 13万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得12.75万元再改成 14万元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得14万元再改成 15万元，你要改变你的选择吗?<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得-15万元再改成 15.5万元，你要改变你的选择吗？<br>
+受试者：会的。<br>
+实验人：好的，谢谢你的参与！<br>
+</p>
+</section>
+<section id="第二次实验过程" class="level3">
+<h3 class="anchored" data-anchor-id="第二次实验过程">第二次实验过程</h3>
+<p>实验人：你目前面临着一项最大可能获利20元，或者最大获利0元的决策项目。第一方案：以50%的机会获利20元，50%的机会获利0元；第二方案：以100%的机会获利10元，你会选择哪一个方案？<br>
+受试者：第一个吧。<br>
+实验人：若将第二方案中的100%机会获得10元改成12元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得12元再改成 13元，你要改变你的选择吗？<br>
+受试者：会的。<br>
+实验人：好的。对于在将第一个方案变为最大可能获利13.5元，最大可能获利0元，都还是同等的可能性。第二个方案是100%获利6.75元，你会选择哪一个方案。<br>
+受试者：我会选择第一个方案。<br>
+实验人：若将第二方案中的100%机会获得6.75元再改成7.5元，你要改变你的选择吗？<br>
+受试者：会的<br>
+实验人：好的。对于在将第一个方案再变为最大可能获利20元，最小可能获利13.5元，都还是同等的可能性。第二个方案是100%获利16.75万元，你会选择哪一个方案。 受试者：我会选择第一个方案。<br>
+实验人：若将第二方案中的100%机会获得16万元改成 17元，你要改变你的选择吗？<br>
+受试者：不会。<br>
+实验人：若将第二方案中的100%机会获得17万元再改成 17.5万元，你要改变你的选择吗？<br>
+受试者：会的。<br>
+实验人：好的，谢谢你的参与！</p>
+</section>
+</section>
+<section id="参考文献" class="level2">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">参考文献</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-morgenstern1953theory" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">MORGENSTERN O. VON NEUMANN J. Theory of games and economic behavior[M]. Princeton university press, 1953.</div>
+</div>
+<div id="ref-friesen1979arrow" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">FRIESEN P H. The arrow-debreu model extended to financial markets[J]. Econometrica: Journal of the Econometric Society, 1979: 689-707.</div>
+</div>
+<div id="ref-kahneman2013prospect" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">KAHNEMAN D. TVERSKY A. Prospect theory: An analysis of decision under risk[M]//Handbook of the fundamentals of financial decision making: Part i. World Scientific, 2013: 99-127.</div>
+</div>
+<div id="ref-luce1958probabilistic" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">LUCE R D. A probabilistic theory of utility[J]. Econometrica: Journal of the Econometric Society, 1958: 193-224.</div>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2023, Jianqi Huang</div>   
+  </div>
+</footer>
+
+
+
+</body></html>

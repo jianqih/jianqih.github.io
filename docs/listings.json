@@ -1,0 +1,36 @@
+[
+  {
+    "listing": "/post.html",
+    "items": [
+      "/post/HJB/index.html",
+      "/post/Master_metrics_chp2/index.html",
+      "/post/Master_metrics_chp1/index.html",
+      "/post/2023-02-12-quarto build a book.html",
+      "/post/2022-11-19-SOE and FDI Strategies.html",
+      "/post/2022-11-18-SFA.html",
+      "/post/2022-11-08-How-to-use-snippets-in-Rmd.html",
+      "/post/2022-10-29-Using-Conda-manage-package-from-some-language.html",
+      "/post/quarto_book/index.html",
+      "/post/2022-10-21-jupyter-format.html",
+      "/post/N-M-function/2022-10-20-NM-function.html",
+      "/post/2022-10-19-ml-mul_reg.html",
+      "/post/Young-telent/index.html"
+    ]
+  },
+  {
+    "listing": "/codes.html",
+    "items": [
+      "/code/stat-learn.html",
+      "/code/IV.html",
+      "/code/缺失数据处理.html",
+      "/code/broom.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/project/rep/index.html",
+      "/project/mlsl/index.html"
+    ]
+  }
+]

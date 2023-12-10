@@ -1,0 +1,66 @@
+---
+title: "About"
+subtitle: "A little more about me~"
+---
+
+### Basic Information
+
+-   **gender**: male
+
+-   **citizenship**: Chinese
+
+-   **date of birth: 2002.09**
+
+-   **language**: English, Chinese, Cantonese
+
+### education
+
+<div class="topbr">
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap title="A graduation cap" >}} B.A. in Management Science, 2020-present
+
+</p>
+
+<p class="custom-subtitle2">
+
+Central University of Finance and Economics, China
+
+</p>
+
+### research interests
+
+<div class="topbr">
+
+<p class="custom-subtitle">
+
+{{< fa graduation-cap title="A graduation cap" >}}
+
+</p>
+
+-   **Agricultural Economics**
+
+    </p>
+
+-   **Computational Economics**
+
+    </p>
+
+-   **Macroeconomics**
+
+    </p>
+
+-   **Applied Microeconometrics**
+
+    </p>
+
+-   **Finance**
+
+    </p>
+
+### Habits
+
+-   reading books including the categories of history, biography and fictions.
+
+-   swimming and climbing always relax myself.

@@ -1,0 +1,17 @@
+---
+title: "The Literature Replication: Based on R"
+date: 2023-12-10
+author: Jianqi Huang
+categories: 
+    - Micro
+    - Econ
+format:
+  html:
+    code-fold: true
+image: images/rpp2.png
+---
+# The Literature Replication: Based on R
+
+- Website: <https://jianqih.github.io/rrp/>
+
+This book based on Chinese Micro-Datasets like CHFS,CFPS and CHARLS using R to replicate. It also replicates some famous paper. It will help to get a deeper understand for the economic data processing and the econometric methods.
