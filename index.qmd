@@ -13,7 +13,12 @@ My name is Jianqi Huang and I am an undergraduate student at the [Central Univer
 
 ### Random Thoughts
 It can be seen [here](jianqi.github.io/RS.html)
+
+### Public Goods
+I created a resources and information collection website related to economies, called "About Econ". You can find [here](https://about-econ.jianqihuang.com/)
 :::
+
+
 
 <div class="column-margin column-container">
 ![](jq-mar-20.jpeg){.rounded}
