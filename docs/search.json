@@ -226,9 +226,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jianqi",
+    "title": "Hi!",
     "section": "",
-    "text": "🧙‍♀️ Hello! My name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. I am passionate about utilizing Deep Learning and Reinforcement Learning to address the macroeconomic and financial models. I am also interested in structural econometrics and empirical asset pricing."
+    "text": "Hi!\nMy name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. I am passionate about utilizing Deep Learning and Reinforcement Learning to address the macroeconomies and finance models. I am also interested in structural econometrics and empirical asset pricing.\n\nRandom Thoughts\nIt can be seen here"
   },
   {
     "objectID": "about.html",
@@ -320,5 +320,19 @@
     "title": "Curriculum Vitae",
     "section": "References",
     "text": "References\nAvailable upon request"
+  },
+  {
+    "objectID": "chinese.html",
+    "href": "chinese.html",
+    "title": "Chinese",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "RS.html",
+    "href": "RS.html",
+    "title": "Random Thought",
+    "section": "",
+    "text": "No matching items"
   }
 ]

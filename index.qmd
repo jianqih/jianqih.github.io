@@ -1,20 +1,40 @@
 ---
 title: ""
+# page-layout: full
 image: jq-mar-20.jpeg
-about: 
-  template: trestles
-  image-shape: rectangle
-  image-width: 15em
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/JianqiHuan67561
-    - icon: github
-      text: GitHub
-      href: https://github.com/jianqih
-    - icon: envelope
-      text: Email
-      href: mailto:jianqihuang@email.cufe.edu.cn
+card-style: "summary"
+resources:
+    - "jq-mar-20.jpeg"
 ---
+::: {.column-page-inset}
+::: {.column-page-inset-left}
+# Hi!
+My name is Jianqi Huang and I am an undergraduate student at the [Central University of Finance and Economics](https://www.cufe.edu.cn/). I am passionate about utilizing _Deep Learning_ and _Reinforcement Learning_ to address the **macroeconomies** and **finance** models. I am also interested in structural econometrics and empirical asset pricing.
 
-🧙‍♀️ Hello! My name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. I am passionate about utilizing Deep Learning and Reinforcement Learning to address the macroeconomic and financial models. I am also interested in structural econometrics and empirical asset pricing.
+### Random Thoughts
+It can be seen [here](jianqi.github.io/RS.html)
+:::
+
+<div class="column-margin column-container">
+![](jq-mar-20.jpeg){.rounded}
+</div>
+:::
+
+{{< pagebreak >}}
+
+::: {.column-page-inset .text-center}
+```{=html}
+<a class="btn btn-outline-dark", href="https://twitter.com/jianqihuan" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-twitter" role='img' aria-label='Twitter'></i>
+</a>
+
+<a class="btn btn-outline-dark", href="https://github.com/jianqih" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-github" role='img' aria-label='Github'></i>
+</a>
+
+
+<a class="btn btn-outline-dark", href="mailto:jianqihuang@email.cufe.edu.cn" target="_blank" rel="noopener noreferrer">
+    <i class="ai bi-envelope" role='img' aria-label='email'></i>
+</a>
+```
+:::

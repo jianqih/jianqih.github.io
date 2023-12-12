@@ -32,5 +32,13 @@
       "/project/rep/index.html",
       "/project/mlsl/index.html"
     ]
+  },
+  {
+    "listing": "/chinese.html",
+    "items": []
+  },
+  {
+    "listing": "/RS.html",
+    "items": []
   }
 ]

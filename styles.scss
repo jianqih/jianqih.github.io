@@ -1,11 +1,8 @@
 /*-- scss:defaults --*/
 
-$theme-beige: #fafafa;
+$theme-beige: #cdbaba;
 $theme-green: #5CB4C2;
 $theme-forest: #345136;
-$theme-red: #AF4E37;
-$theme-orange: #E68232;
-$theme-yellow: #F4BA02;
 
 $link-color: lighten($theme-forest, 10%);
 
@@ -13,27 +10,13 @@ $link-color: lighten($theme-forest, 10%);
 
 .icon h1 {
     text-align: center;
-    color: $theme-orange;
+    color: $theme-beige;
 }
 
 .center h5 {
     text-align: center;
 }
 
-.red {
-    color: $theme-red;
-    font-weight: bold;
-}
-
-.orange {
-    color: $theme-orange;
-    font-weight: bold;
-}
-
-.yellow {
-    color: $theme-yellow;
-    font-weight: bold;
-}
 
 .forest {
     color: $theme-forest;

@@ -1,17 +1,22 @@
 project:
   type: website
   output-dir: docs
-
+execute:
+  freeze: true
 website:
   site-url: https://www.jianqihuang.com
   title: "Jianqi"
-  twitter-card: true
+  twitter-card: 
+    creator: "@jianqih"
+  repo-url: https://github.com/jianqih/jianqih.github.io
+  repo-actions: [edit, issue]
   open-graph: true
-  sidebar: 
-    collapse-level: 1
+  # sidebar: 
+  #   collapse-level: 1
   favicon: fav.png
   navbar:
-    pinned: true
+    background: dark
+    foreground: light
     left:
       - href: cv/CV.pdf
         text: CV
@@ -19,23 +24,25 @@ website:
         text: Research
       - href: projects.qmd
         text: Projects
-      - href: codes.qmd
-        text: Code
       - href: talks.qmd
         text: Talks & Workshops
       - href: post.qmd
-        text: Post
-      - href: misc.qmd
-        text: Misc
+        text: Posts
+      - text: More
+        menu: 
+        - href: misc.qmd
+        - href: RS.qmd
   page-footer: 
-    background: light
+    # background: light
     left: "Copyright 2023, Jianqi Huang"
 
 format:
   html:
-    theme: 
-      light: [united, styles.scss]
-      dark: [united, styles-dark.scss]
+    theme: journal
+    css: styles.css
     toc: true
-    highlight-style: monokai
-    page-layout: full
+    toc-depth: 4
+    toc-title: "Contents"
+    highlight-style: tango
+    from: markdown+emoji
+    # page-layout: full
