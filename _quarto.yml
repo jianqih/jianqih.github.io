@@ -18,7 +18,7 @@ website:
     background: dark
     foreground: light
     left:
-      - href: cv/CV.pdf
+      - href: cv.qmd
         text: CV
       - href: research.qmd
         text: Research

@@ -1,0 +1,7 @@
+---
+title: "CV"
+---
+
+It can be found [here](https://www.dropbox.com/scl/fi/l18uw3upmax74laxyauru/cv.pdf?rlkey=0r7sqftvb8vppabevqo1iuh0z&dl=0). 
+<!-- You can also find out this CV template [here](https://github.com/skyzh/chicv) written by Typst, a very simplified and prospective ducumention language.  -->
+

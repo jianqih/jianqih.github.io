@@ -8,17 +8,22 @@ resources:
 ---
 ::: {.column-page-inset}
 ::: {.column-page-inset-left}
-# Hi!
-My name is Jianqi Huang and I am an undergraduate student at the [Central University of Finance and Economics](https://www.cufe.edu.cn/). I am passionate about utilizing _Deep Learning_ and _Reinforcement Learning_ to address the **macroeconomies** and **finance** models. I am also interested in structural econometrics and empirical asset pricing.
+
+# Hi! 
+My name is Jianqi Huang and I am an undergraduate student at the [Central University of Finance and Economics](https://www.cufe.edu.cn/). Currently, I am a Full-time Research Assistant at [HKUST(GZ)](https://www.hkust-gz.edu.cn/) advised by Prof. [Kelvin Yuen](https://kelvincyyuen.com/) and Prof. [Junan He](https://junnanhe.weebly.com/).
+
+<!-- I am passionate about utilizing _Deep Learning_ and _Reinforcement Learning_ to address the **macroeconomies** and **finance** models. I am also interested in structural econometrics and empirical asset pricing. -->
+
+### Research Interests
+- Macroeconomics
+- Asset Pricing
 
 ### Random Thoughts
-It can be seen [here](jianqi.github.io/RS.html)
+It can be seen [here](https://jianqih.github.io/RS.html)
 
 ### Public Goods
 I created a resources and information collection website related to economies, called "About Econ". You can find [here](https://about-econ.jianqihuang.com/)
 :::
-
-
 
 <div class="column-margin column-container">
 ![](jq-mar-20.jpeg){.rounded}

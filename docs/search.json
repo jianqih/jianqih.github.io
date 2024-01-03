@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "Hi!",
     "section": "",
-    "text": "Hi!\nMy name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. I am passionate about utilizing Deep Learning and Reinforcement Learning to address the macroeconomies and finance models. I am also interested in structural econometrics and empirical asset pricing.\n\nRandom Thoughts\nIt can be seen here\n\n\nPublic Goods\nI created a resources and information collection website related to economies, called “About Econ”. You can find here"
+    "text": "Hi!\nMy name is Jianqi Huang and I am an undergraduate student at the Central University of Finance and Economics. Currently, I am a Full-time Research Assistant at HKUST(GZ) advised by Prof. Kelvin Yuen and Prof. Junan He.\n\n\nResearch Interests\n\nMacroeconomics\nAsset Pricing\n\n\n\nRandom Thoughts\nIt can be seen here\n\n\nPublic Goods\nI created a resources and information collection website related to economies, called “About Econ”. You can find here"
   },
   {
     "objectID": "about.html",
@@ -333,6 +333,20 @@
     "href": "RS.html",
     "title": "Random Thought",
     "section": "",
-    "text": "No matching items"
+    "text": "创新创业项目\n\n\n\n\n\n\n\nIdea\n\n\nCollege\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2024\n\n\nJianqi Huang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "RT/project_idea/main.html",
+    "href": "RT/project_idea/main.html",
+    "title": "创新创业项目",
+    "section": "",
+    "text": "“创业项目”\n临近离开这个学校，最近需要考虑把珍藏多年的书本出售（当然一些书还是会带回家）但这个时候都不是一个很好的时间点（期末都不买书了）可能只能低价卖给学校书店，但价格太低就不是非常愿意。同时在过去一年，我在网络上打印了很多的英文书籍，一些书可能发到网上有人会买，比如苗建军老师的Economic Dynamics in Discrete Time。这些书本/教材类的东西会相对好交易一些，我也为看文献的方便，习惯打印纸质文献，积累起来就多了。这些肯定也没办法全部带走的，都是A4纸打印。但想想之前2毛一页纸（一份文献5-7元）还是有些心疼。所以想，有没有可能把这些也在市场上流通。 文献相对于教材来说肯定会更加难匹配上交易对象：不同的人有不同的研究兴趣，也有不同的研究品味。所以，有没有可能有一个平台，专门实现这些文献打印党的需要，把这些文献流通起来。 存在的理由：研究兴趣可能在小破财/某个学院内差不了很远，同时若有机会可能从别人的文献阅读中了解到他们那一分支的经典文献/前沿文献，甚至有促成合作的可能。同时要是能看到别人在看什么、他们怎么看的，或者可以交流一下这些文献后面的脉络。\n或退而求其次，搞一个paper咖啡馆，捐出10份paper（仅限top5+field top）之后就可以换一个咖啡折扣券，实际上是双赢：捐赠者看过的文献留存的边际价值几乎为零，paper出去了，喝了杯咖啡idea有了，paper又有了。对于咖啡馆收集文献，同时多做的一杯咖啡的边际成本就是物料成本；其他人可以从中买这些文献，咖啡馆就可以从中赚取差价。\n一个大学生创新创业项目的proposal就有了，得奖了回来感谢我就行。"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "The CV can be found here. You can also find out this CV template here written by Typst, a very simplified and prospective ducumention language."
   }
 ]

@@ -1,7 +1,8 @@
 ---
 title: "Random Thought"
+subtitle: "Used to written by Chinese"
 listing:
-  contents: Random Thought
+  contents: RT
   sort: "date desc"
   type: default
   image-align: left
