@@ -8,4 +8,3 @@ permalink: /research/
 
 ## Working Papers
 Coming soon...
----
