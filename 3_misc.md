@@ -4,4 +4,4 @@ title: Misc
 permalink: /misc/
 ---
 
-- [EconResource](https://github.com/jianqih/EconResources)
+- [EconResources](https://github.com/jianqih/EconResources)
