@@ -72,7 +72,7 @@ body.theme-luka {
   background: var(--luka-bg);
   color: var(--luka-text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.65;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -111,7 +111,7 @@ body.theme-luka .nav-container {
 
 body.theme-luka .nav-left a {
   color: var(--luka-text);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -123,7 +123,7 @@ body.theme-luka .theme-toggle {
   height: 40px;
   border-radius: 999px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -182,14 +182,14 @@ body.theme-luka .image.avatar img {
 body.theme-luka .site-name {
   margin: 0 0 8px;
   color: var(--luka-text);
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.2;
 }
 
 body.theme-luka .site-email {
   margin: 0 0 24px;
   color: var(--luka-secondary);
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Ubuntu Mono", "SFMono-Regular", monospace;
   word-break: break-all;
 }
@@ -232,7 +232,7 @@ body.theme-luka .visitor-card {
 
 body.theme-luka .visitor-card-title {
   margin-bottom: 8px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--luka-accent);
   text-transform: uppercase;
@@ -240,7 +240,7 @@ body.theme-luka .visitor-card-title {
 }
 
 body.theme-luka .visitor-card-body {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -269,7 +269,7 @@ body.theme-luka .section-title {
   padding-bottom: 10px;
   border-bottom: 2px solid var(--luka-accent);
   color: var(--luka-accent);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
 }
 
@@ -337,29 +337,29 @@ body.theme-luka .experience-content p {
 }
 
 body.theme-luka .exp-title {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--luka-text);
 }
 
 body.theme-luka .exp-detail {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--luka-secondary);
 }
 
 body.theme-luka .exp-period {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--luka-accent);
   font-weight: 500;
 }
 
 body.theme-luka .date {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--luka-accent);
   font-weight: 500;
 }
 
 body.theme-luka .project-card {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -378,25 +378,63 @@ body.theme-luka .publications ol.bibliography li {
 body.theme-luka .pub-content .title {
   margin-bottom: 4px;
   color: var(--luka-text);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 body.theme-luka .pub-content .author {
   margin-bottom: 4px;
   color: var(--luka-secondary);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body.theme-luka .pub-content .periodical {
   margin-bottom: 6px;
   color: var(--luka-accent);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body.theme-luka .pub-content .links a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+body.theme-luka .pub-content details.abstract {
+  margin-top: 6px;
+}
+
+body.theme-luka .pub-content details.abstract summary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--luka-accent);
+  list-style: none;
+}
+
+body.theme-luka .pub-content details.abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+body.theme-luka .pub-content details.abstract summary::before {
+  content: "\25B8"; /* ▸ */
+  display: inline-block;
+  margin-right: 4px;
+  transition: transform 0.15s ease;
+}
+
+body.theme-luka .pub-content details.abstract[open] summary::before {
+  transform: rotate(90deg);
+}
+
+body.theme-luka .pub-content details.abstract .abstract-text {
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--luka-secondary);
+  background: var(--luka-border);
+  border-radius: 6px;
 }
 
 body.theme-luka .awards-grid {
@@ -414,12 +452,12 @@ body.theme-luka .award-item {
 
 body.theme-luka .award-icon {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 body.theme-luka .award-text {
   color: var(--luka-text);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body.theme-luka .site-footer {
@@ -434,13 +472,13 @@ body.theme-luka .site-footer p {
   padding-top: 20px;
   border-top: 1px solid var(--luka-footer-border);
   color: var(--luka-secondary);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 body.theme-luka .template-credit {
   display: inline-block;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body.theme-luka h1,
@@ -496,7 +534,7 @@ body.theme-luka strong {
   }
 
   body.theme-luka .site-name {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   body.theme-luka .experience-item {
@@ -520,7 +558,7 @@ body.theme-luka strong {
   }
 
   body.theme-luka .section-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   body.theme-luka .project-card,
@@ -528,6 +566,6 @@ body.theme-luka strong {
   body.theme-luka .award-text,
   body.theme-luka .pub-content .author,
   body.theme-luka .pub-content .periodical {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
